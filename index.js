@@ -29,3 +29,18 @@ var letters = ['@','$','.',',',':',';','-','+','=','#','*','&','A','B','C','D',
 	'k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
 const DEG2RAD = 0.0174532918661;
+
+var M  = -.02;   /* initial altitude (slightly below sea level) */
+var dd1 = 0.45;  /* weight for altitude difference */
+var dd2 = 0.035; /* weight for distance */
+var POW = 0.47;  /* power for distance function */
+
+var Depth; /* depth of subdivisions */
+var r1,r2,r3,r4; /* seeds */
+var longi,lat,scale;
+var vgrid, hgrid;
+
+
+int latic = 0; /* flag for latitude based colour */
+
+int Width = 800, Height = 600; /* default map size */
