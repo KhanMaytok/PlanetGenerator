@@ -1,10 +1,21 @@
-const BLACK = 0;
-const WHITE = 1;
-const BACK = 2;
-const GRID = 3;
-const OUTLINE1 = 4;
-const OUTLINE2 = 5;
-const LOWEST = 6;
-const SEA = 7;
-const LAND = 8;
-const HIGHEST = 9;
+var BLACK = 0;
+var WHITE = 1;
+var BACK = 2;
+var GRID = 3;
+var OUTLINE1 = 4;
+var OUTLINE2 = 5;
+var LOWEST = 6;
+var SEA = 7;
+var LAND = 8;
+var HIGHEST = 9;
+
+var debug = 0;
+
+var view;
+
+var nocols = 65536;
+
+var rtable = new Array(65536);
+var gtable = new Array(65536);
+var btable = new Array(65536);
+
